@@ -16,6 +16,13 @@ abline(a=fs1$coefficients[1],b=fs1$coefficients[2],col="green")
 abline(a=fs2$coefficients[1],b=fs2$coefficients[2],col="blue")
 abline(a=fs3$coefficients[1],b=fs3$coefficients[2],col="red")
 dev.off()
+#Export graph plots.png
+png("plots.png")
+plot(source,xlim=c(1,12))
+abline(a=fs1$coefficients[1],b=fs1$coefficients[2],col="green")
+abline(a=fs2$coefficients[1],b=fs2$coefficients[2],col="blue")
+abline(a=fs3$coefficients[1],b=fs3$coefficients[2],col="red")
+dev.off()
 #Print the graph on the screen
 plot(source,xlim=c(1,12))
 abline(a=fs1$coefficients[1],b=fs1$coefficients[2],col="green")
